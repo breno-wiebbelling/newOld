@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seu Projeto</title>
+    <style>
+        @font-face {
+            font-family: roboto;
+            src: url(../robotoMe.ttf);
+        }
+
+        *{
+            font-family: roboto;;
+            
+        }
+        body{
+            background-color: #f0eeeb98;
+            /*background-color: rgb(80, 63, 63);
+*/
+            margin-left: 30px;
+        }
+
+        a{
+            color: rgb(44, 43, 43);
+        }
+        a:hover{
+            color: blueviolet;
+        }
+
+        input{
+            font-family: roboto;
+            padding-left: 14px ;
+        }
+
+        .color{
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Aqui, você está na página de Projetos.</h2>
+
+    <a href="../index.html">Voltar à página inicial</a>
+    
+    <h4 style="margin-top:40px;">Nossas Vagas são:</h4>
+    <ul>
+        <li>Projetista D</li>
+        <li>Assistente de RH</li>
+        <li>Estágio de Arquitetura e Design</li>
+    </ul>
+
+
+    <h4 style="margin-top: 80px;">Nos envie seus dados:</h4>
+    <form style="margin-top: 40px">
+        <label for="nome">Nome: </label>
+        <input id="nome" type="text" placeholder="Nome Completo">
+
+        <label for="idade">Idade: </label>
+        <input type="number" onmouseleave="validaIdade()" id="idade" placeholder="apenas números">
+        <p id="resposta"></p>
+        <br>
+        
+        <div style="margin-top: 30px;">
+        
+            <label for="email">Email: </label>
+            <input type="email" id="email" placeholder="exemplo@email.com">
+
+            <label for="telefone">Telefone: </label>
+            <input type="tel" id="telefone" placeholder="(xx) xxxxx-xxxx">
+        </div>
+
+        <label for="cor">Cor predileta: </label>
+        <input class="color" type="color">
+        <br>
+        <label for="file">Arquivo:</label>
+        <input style="margin-top:30px;" type="file">
+        <p style="font-size: 15px;">Nos envie uma prévia dos seus projetos</p>
+
+        <input type="submit">
+
+
+    </form>
+</body>
+
+<script>
+    function validaIdade(){
+        idade = Number(document.getElementById('idade').value);
+        if (idade<18){
+            document.getElementById("resposta").innerHTML = ("Infelizmente, você precisa ser maior de 18 anos para estas vagas...")
+        }
+    }
+</script>
+</html>

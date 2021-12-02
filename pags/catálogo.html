@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo</title>
+
+    <style>
+        @font-face {
+            font-family: roboto;
+            src: url(../robotoMe.ttf);
+        }
+
+        body{
+            font-family: roboto;
+            padding-left: 30px;
+        }
+
+        a:hover{
+            color: rgb(45, 48, 48);
+        }
+
+        .pad{
+            padding-left: 80px;
+        }
+
+        .c1{
+            padding-left: 30px;
+        }
+        
+        table{
+            margin-top: 40px;
+        }
+    </style>
+
+</head>
+<body>
+    <h2>Aqui, você está na página de Catálogo</h2>
+
+    <a href="../index.html">Voltar à página inicial</a>
+    
+    <table>
+        <tr>
+            <th>Produtos</th>
+            <th style="padding-left: 40px;">Valor</th>
+            <th class="pad">Prazo de Produção</th>
+        </tr>
+       
+        <tr>
+            <td class="c1">Porta</td>
+            <td class="pad">R$ 500,00 </td>
+            <td class="pad">10 à 15 dias</td>
+        </tr>
+       
+        <tr>
+            <td class="c1">Escrivaninha</td>
+            <td class="pad">R$ 1000,00 </td>
+            <td class="pad">15 à 20 dias</td>
+        </tr>
+    </table>
+
+    <p style="padding-left: 33px;">Demais produtos: consultar valores e prazo para frete e produção...</p>
+    
+    <p style="margin-top: 70px;">Músicas para ajudar na hora decisiva da escolha!</p>
+    <audio controls type="audio/mp3" src="../src/audio.mp3"></audio>
+
+</body>
+</html>
